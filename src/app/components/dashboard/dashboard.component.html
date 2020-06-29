@@ -1,0 +1,6 @@
+<dui-dialog primery [(visible)]="showDialog" title="Create New Product" [width]='550'>
+    <h4>Create New Product</h4>
+    <app-product></app-product>
+</dui-dialog>
+<dui-button textured (click)="showDialog=!showDialog">Create Product</dui-button>
+<app-product-list></app-product-list>

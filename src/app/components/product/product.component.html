@@ -1,0 +1,19 @@
+<dui-form style="max-width: 450px;">
+    <dui-form-row label="Product Name">
+        <dui-input round lightFocus placeholder="Enter Product Name" focus required></dui-input>
+    </dui-form-row>
+    <dui-form-row label="Application Name">
+        <dui-select [(ngModel)]="radioValue" placeholder="Please choose" style="width: 130px;" required>
+            <dui-option value="x">Statement</dui-option>
+            <dui-option value="y">Liquidities</dui-option>
+            <dui-option value="z">Securities</dui-option>
+        </dui-select>
+    </dui-form-row>
+    <dui-form-row label="Product Descriptin">
+        <dui-input round lightFocus placeholder="Enter Description" step=5></dui-input>
+    </dui-form-row>
+    <dui-dialog-actions>
+        <dui-button closeDialog textured>Close</dui-button>
+        <dui-button closeDialog primary>Ok</dui-button>
+    </dui-dialog-actions>
+</dui-form>

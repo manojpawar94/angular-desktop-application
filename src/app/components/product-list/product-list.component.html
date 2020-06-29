@@ -1,0 +1,17 @@
+<dui-dialog #dialog [width]='600' title="Schedule Deployment" visible>
+    <h4>Schedule Deployment</h4>
+    <app-product-deploy></app-product-deploy>
+</dui-dialog>
+
+<p>With right click on the header, you can display additional columns.</p>
+<dui-table [items]="items" autoHeight selectable itemHeight=24>
+    <dui-table-column name="productId" header="Product Id"></dui-table-column>
+    <dui-table-column name="productName" header="Product Name" [width]='250'></dui-table-column>
+    <dui-table-column name="applicationName" header="Application Name" [width]='150'></dui-table-column>
+    <dui-table-column name="description" header="Product Description" [width]="300"></dui-table-column>
+    <dui-table-column>
+        <ng-container *duiTableCell="let row">
+            <dui-button textured (click)="dialog.show()" icon="triangle_right" small> Schedule</dui-button>
+        </ng-container>
+    </dui-table-column>
+</dui-table>
