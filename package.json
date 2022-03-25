@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "~9.0.6",
     "@angular/router": "~9.0.6",
     "@marcj/angular-desktop-ui": "^0.3.25",
-    "electron": "^7.3.2",
+    "electron": "^13.6.6",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
